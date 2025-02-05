@@ -1,0 +1,111 @@
+.phome
+{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    left: 60%;
+    top:35%;
+    font-weight: bold;
+    text-shadow: 1px 5px  rgb(157, 6, 6);
+}
+.ps
+{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    left: 57%;
+    top:43%;
+    font-weight: bold;
+    color: rgb(239, 194, 15);
+    text-shadow: 0px 1px 10px rgb(161, 11, 11);
+}
+.hbody
+{
+
+    background-image:url(https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_System_Software.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin-top: 40px;
+    
+}
+
+
+/* Navbar------------------------------------- */
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+
+.logo
+{
+  width: 90px;
+  height:50px;
+  margin-right: auto;
+}
+
+li,a, Link{
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color:rgb(246, 239, 239);
+    
+
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:20px;
+    height: 60px;
+    background-color: black;
+    
+    
+}
+.logo
+{
+    margin-right: auto;
+    padding-left: 20px;
+    font-size: 30px;
+}
+span{
+    color: #e71111;
+}
+.nav_links
+{
+    list-style: none;
+}
+.nav_links li 
+{
+    display: inline-block;
+    padding:30px;
+    position: relative;
+    
+}
+.nav_links li:hover
+{
+    text-shadow: 1px 1px 10px red;
+}
+.nav_links li::before{
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width:0;
+  height: 2px;
+  background: #e71111;
+  transition: .3s;
+  
+}
+.nav_links li:hover::before{
+    width: 80%;
+    
+    
+}
+

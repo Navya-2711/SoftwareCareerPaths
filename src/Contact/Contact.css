@@ -1,0 +1,130 @@
+/* Contact Form Container */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin-top: 30px;
+  
+}
+
+/* Contact Card */
+.contact-card {
+  display: flex; /* Use flexbox to align image and form */
+  flex-direction: row; /* Horizontal layout */
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 18px blue;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Contact Image Section */
+.contact-image {
+  flex: 1;
+  padding-right: 20px; /* Space between image and form */
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  flex: 2; /* Form takes up more space */
+}
+
+/* Heading */
+.contact-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #080c4c;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 20px; /* Increased space for better form readability */
+  text-align: left;
+}
+
+/* Label */
+.input-group label {
+  font-size: 14px;
+  color: #060506;
+  font-weight: bold;
+}
+
+/* Input and Textarea Styling */
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #050a45;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Textarea */
+.input-group textarea {
+  height: 150px;
+}
+
+/* Focus effect for input fields */
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #122bbc;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #080b6c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #071e37;
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .contact-card {
+      flex-direction: column; /* Stack image and form vertically on mobile */
+      max-width: 90%;
+      padding: 20px;
+  }
+
+  .contact-image {
+      padding-right: 0; /* Remove padding in mobile view */
+      margin-bottom: 20px; /* Space between image and form */
+  }
+
+  button {
+      padding: 12px;
+      font-size:18px;
+}
+}
+

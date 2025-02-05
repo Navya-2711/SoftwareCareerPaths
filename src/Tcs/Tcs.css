@@ -1,0 +1,121 @@
+/* Styles for the .tcs container */
+.tcs {
+  float: right; /* Align .tcs to the right */
+  width: 100%;  /* Ensure it doesn't exceed screen width on mobile */
+  margin-top: 40px;
+}
+
+/* Styling for the image */
+.tcsimg {
+  margin-top: 40px;
+  border-radius: 20%;
+  height: 400px;
+  width: 700px;
+
+  margin-left: 400px;
+  object-fit: cover; /* Ensures the image does not stretch */
+  max-width: 100%; /* Make image responsive on smaller screens */
+}
+
+
+/* Font size for paragraph inside tcs */
+.tcsp {
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+  margin-left: 40px;
+}
+
+/* Styling for .ptcs (align left) */
+.ptcs {
+  font-size: 20px;
+  margin-top: 50px;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure it takes full width */
+}
+
+/* Styling for .htcs */
+.htcs {
+  margin-top: 5px;
+}
+
+/* Styling for .jtcs (align left) */
+.jtcs {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+}
+
+/* Styling for .jtcs1 (align left) */
+.jtcs1 {
+  font-size: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .tcsimg {
+      width: 80%; /* Make image smaller for medium screens */
+      height: auto;
+      margin: 0 auto; /* Center the image */
+  }
+
+  .tcs {
+      float: none;
+      width: 100%; /* Ensure it uses full width on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+  }
+
+  .ptcs {
+      font-size: 18px;
+      text-align: left; /* Align text to the left */
+  }
+
+  .jtcs, .jtcs1 {
+      font-size: 18px;
+      text-align: left; /* Align text to the left */
+  }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .tcsimg {
+      width: 100%; /* Make image responsive to mobile screens */
+      height: auto;
+      margin-top: 20px; /* Adjust margin for better fit */
+  }
+
+  .tcsp {
+      font-size: 16px; /* Reduce font size for mobile */
+  }
+
+  .ptcs {
+      font-size: 16px; /* Reduce font size for mobile */
+      text-align: left; /* Align text to the left on mobile */
+  }
+
+  .jtcs, .jtcs1 {
+      font-size: 16px; /* Reduce font size for mobile */
+      text-align: left; /* Align text to the left on mobile */
+  }
+}
+.atcs{
+  color: blue;
+  border-bottom:1px solid rgb(7, 7, 7);
+  padding:5px
+  
+}
+.atcs:hover{
+  color:blueviolet
+
+}
+.space{
+  padding-left: 20px;
+  gap:30px;
+  
+  padding: 30px 40px;
+ 
+ 
+}

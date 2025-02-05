@@ -1,0 +1,57 @@
+/* Grid container for company cards */
+.ccontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 250px); /* Default: 3 columns for large screens */
+  grid-gap: 120px; /* Adjust gap between cards */
+  justify-content: center;
+  padding: 1em;
+  margin-top: 80px;
+  height: auto; /* Removed fixed height to allow flexibility */
+}
+
+/* Styling for each company card */
+.company {
+  border: 2px solid rgb(81, 78, 78);
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 280px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Query for Tablets and Small Desktop screens */
+@media (max-width: 1024px) {
+  .ccontainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium-sized screens */
+    grid-gap: 60px; /* Reduce gap between items */
+  }
+
+  .company {
+    padding: 3em; /* Adjust padding for medium screens */
+    width: 280px; /* Adjust width */
+    height: 250px; /* Adjust height */
+  }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .ccontainer {
+    grid-template-columns: 1fr; /* 1 column layout for mobile */
+    grid-gap: 40px; /* Reduce gap between cards */
+  }
+
+  .company {
+    padding: 2em; /* Reduce padding for mobile */
+    width: 90%; /* Make the company card take 90% of the container width */
+    height: 220px; /* Adjust height */
+  }
+}

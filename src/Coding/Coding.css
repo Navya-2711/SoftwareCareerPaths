@@ -1,0 +1,25 @@
+.code {
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 1.5; /* Added line-height for better readability */
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* For tablets and smaller desktops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .code {
+      margin-left: 20px; /* Reduce left margin for smaller screens */
+      font-size: 18px;   /* Slightly smaller font for tablets */
+    }
+  }
+  
+  /* For mobile screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .code {
+      margin-left: 10px; /* Further reduce margin for mobile */
+      font-size: 16px;   /* Smaller font size for mobile devices */
+    }
+  }
+  

@@ -1,0 +1,92 @@
+.container1 {
+    width: 940px;
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 40px 50px;
+}
+
+.container1 .hr {
+    height: 2px;
+    border: none;
+    background: black;
+}
+
+.container1 h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container1 ul li {
+    color: rgb(74, 73, 73);
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.container1 button {
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.container1 .index {
+    margin: auto;
+    font-size: 18px;
+}
+
+.container1 .correct {
+    background: #dffff2;
+    border-color: #00d397;
+}
+
+.container1 .wrong {
+    background: #FFeBEB;
+    border-color: red;
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+    .container1 {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .container1 h2 {
+        font-size: 18px; /* Slightly smaller heading */
+    }
+
+    .container1 ul li {
+        font-size: 18px; /* Adjust font size for mobile */
+        height: auto; /* Allow for dynamic height */
+    }
+
+    .container1 button {
+        width: 80%; /* Make button width more flexible */
+    }
+
+    .container1 .index {
+        font-size: 16px; /* Adjust index font size */
+    }
+}
+
+/* Larger screens (e.g. laptops) */
+@media screen and (min-width: 769px) {
+    .container1 {
+        width: 940px; /* Keep the original width on larger screens */
+        padding: 40px 50px; /* Retain larger padding */
+    }
+}
